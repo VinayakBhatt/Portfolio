@@ -1,0 +1,356 @@
+body{
+    margin: auto;
+    font-size: 28px;
+}
+/* Header Section Code */
+header{
+    background-image: url('BG2.png');
+    background-size: 100% 500px;
+    height:60px; 
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  float: right;
+}
+ul li a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px black;
+  transition: all 0.5s ease-in-out;
+}
+  
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover {
+    /* Home button Background Colour of animation */
+}
+.active{
+    /* background color for home tab */
+ }
+
+
+#Profile {
+  display: flex;
+  align-items: flex-start;
+  height: 330px;
+  background-image: url('BG.jpg');
+  background-size: 100% 500px;
+  padding: 85px;
+}
+
+.profile-image-container {
+    overflow: hidden;
+    width: 260px;
+    height: 290px; /* Maintain square shape */
+    border: 5px solid rgb(114, 109, 109);
+    text-align: center;
+  }
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-image-container:hover .profile-image {
+  transform: scale(1.1);
+}
+
+.profile-info {
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .experience-container {
+    max-height: 200px; /* Set the desired fixed height */
+    overflow: auto; /* Add a scrollbar if the content exceeds the height */
+    margin-top: 10px;
+  }
+  
+
+  .name {
+    font-size: 24px; /* adjust as needed */
+    font-weight: bold;
+    }
+    
+    .name:hover {
+    color: #ff0000; /* change color on hover */
+    transform: scale(1.1); /* scale text on hover */
+    transition: all 0.5s ease-in-out; /* animate the changes */
+    }
+    .title {
+      font-size: 20px; /* adjust as needed */
+      font-style: italic; /* make the text italic */
+      color: #ffffff; /* change the color of the text */
+      margin-top: 5px; /* adjust as needed */
+      }
+      
+      .title:hover {
+      color: #ff0000; /* change color on hover */
+      transform: scale(1.1); /* scale text on hover */
+      transition: all 0.5s ease-in-out; /* animate the changes */
+      }
+    
+    .description-box {
+    width: 900px; /* adjust as needed */
+    height: 150px; /* adjust as needed */
+    border: 0px solid black; /* adjust as needed */
+    padding: 10px; /* adjust as needed */
+    margin-top: 10px; /* adjust as needed */
+    }
+    
+    .description {
+    font-size: 20px; /* adjust as needed */
+    }
+    
+    .description:hover {
+    color: #fd0000; /* change color on hover */
+    transform: scale(1.1); /* scale text on hover */
+    transition: all 0.5s ease-in-out; /* animate the changes */
+    }
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+.social-icons:hover img {
+    transform: scale(1.1);
+  }
+
+
+#skills{
+    background-image: url('BG2.png');
+    background-size: 100% 550px;
+    height: 250px;
+    border: 1px solid;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+ h1:hover {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+
+.dot {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #bbb;
+    background-size: cover;
+    transition: transform 0.3s ease;  
+    display: inline-block;
+    margin: 0 20px;  
+}
+
+ .skill:hover .dot {
+    transform: scale(1.2);
+}
+
+ .skill-name {
+    text-align: center;
+    margin-top: 5px; /* Adjust the margin as needed */
+}
+
+/* Align the skills horizontally */
+.skill {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.skill:hover .skill-name {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+    transform: scale(1.1);
+}
+
+
+.dot1 {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+    /* Add background image */
+    background-image: url('html.png');
+    background-size: cover; /* Adjust the background sizing as needed */
+}
+.dot2 {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+    /* Add background image */
+    background-image: url('css.png');
+    background-size: cover; /* Adjust the background sizing as needed */
+}
+.dot3 {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+    /* Add background image */
+    background-image: url('js.png');
+    background-size: cover; /* Adjust the background sizing as needed */
+}
+.dot4 {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+    /* Add background image */
+    background-image: url('python.png');
+    background-size: cover; /* Adjust the background sizing as needed */
+}
+.dot5 {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    
+    /* Add background image */
+    background-image: url('node.png');
+    background-size: cover; /* Adjust the background sizing as needed */
+}
+.dot6 {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    /* Add background image */
+    background-image: url('mongo.png');
+    background-size: cover; /* Adjust the background sizing as needed */
+}
+.dot1:hover, .dot2:hover, .dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover {
+    transform: scale(1.2);
+}
+
+footer{
+  height: auto;
+  width: auto;
+  background-color: #946464;
+  color: white; /* Change the text color to white */
+  padding: 10px 20px 20px 20px; /* Reduced top padding */
+}
+
+#contact {
+  text-align: left;
+}
+.contact-details {
+  text-align: right;
+}
+
+.contact-details p {
+  text-align: right;
+}
+
+footer h2 {
+  margin-top: 0; /* Removed top margin */
+  margin-bottom: 10px;
+  transition: color 0.5s ease;
+}
+  
+  footer h2:hover {
+  color: #ff0000;
+  }
+  
+  .footer-content {
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .map {
+  width: 40%;
+  height: 300px;
+  }
+  .contact-info {
+    width: 45%;
+    }
+    
+    footer p, form input, form textarea {
+    margin: 0;
+    margin-bottom: 10px;
+    }
+    
+    form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    form input[type="submit"]:hover {
+    background-color: #45a049;
+    }
+    
+    form input[type="text"], form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }  
+    .social-media-icons {
+      text-align: left;
+      margin-top: 20px;
+    }
+    
+    .social-media-icon {
+      display: inline-block;
+      margin-right: 10px;
+      transform: scale(1);
+      transition: transform 0.3s ease;
+    }
+    
+    .social-media-icon img {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .social-media-icon:hover {
+      transform: scale(1.2);
+    }
